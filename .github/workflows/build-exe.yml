@@ -1,0 +1,35 @@
+name: Compilar Ejecutable para Windows
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Copiar repositorio
+      uses: actions/checkout@v4
+
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+
+    - name: Instalar dependencias
+      run: |
+        python -m pip install --upgrade pip
+        pip install numpy pyvista pyinstaller
+
+    - name: Compilar con PyInstaller
+      # Cambia 'main.py' si tu script principal tiene otro nombre
+      run: |
+        pyinstaller --noconsole --onefile main.py
+
+    - name: Subir artefacto (.exe)
+      uses: actions/upload-artifact@v4
+      with:
+        name: CalculadoraVectorial-Windows
+        path: dist/*.exe
