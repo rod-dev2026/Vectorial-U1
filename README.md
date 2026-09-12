@@ -6,7 +6,7 @@ Aplicación de escritorio desarrollada en Python diseñada para resolver, analiz
 ## 🖼️ Vista Previa de la Aplicación
 
 <p align="center">
-  <img src="screenshot.png" alt="Calculadora de Cálculo Vectorial - TecNM Tuxtepec" width="100%"/>
+  <img src="screenshoot.png" alt="Calculadora de Cálculo Vectorial - TecNM Tuxtepec" width="100%"/>
 </p>
 
 ## 🚀 Características Principales
