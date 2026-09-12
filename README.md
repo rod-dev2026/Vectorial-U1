@@ -3,6 +3,11 @@
 Aplicación de escritorio desarrollada en Python diseñada para resolver, analizar y visualizar interactivamente los conceptos fundamentales de la **Unidad 1 ("Vectores en el espacio")** de la asignatura de **Cálculo Vectorial** (Clave: ACF-0904) del Tecnológico Nacional de México (TecNM).
 
 ---
+## 🖼️ Vista Previa de la Aplicación
+
+<p align="center">
+  <img src="assets/screenshot.png" alt="Calculadora de Cálculo Vectorial - TecNM Tuxtepec" width="100%"/>
+</p>
 
 ## 🚀 Características Principales
 
