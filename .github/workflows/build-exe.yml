@@ -16,7 +16,6 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
-        cache: 'pip'
 
     - name: Instalar dependencias
       run: |
@@ -24,7 +23,7 @@ jobs:
         pip install numpy pyvista pyinstaller
 
     - name: Compilar con PyInstaller
-      # Cambia 'main.py' si tu script principal tiene otro nombre
+      # Cambia 'main.py' por el nombre real de tu script principal
       run: |
         pyinstaller --noconsole --onefile main.py
 
