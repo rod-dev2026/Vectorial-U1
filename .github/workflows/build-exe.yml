@@ -23,9 +23,8 @@ jobs:
         pip install numpy pyvista pyinstaller
 
     - name: Compilar con PyInstaller
-      # Cambia 'main.py' por el nombre real de tu script principal
       run: |
-        pyinstaller --noconsole --onefile main.py
+        pyinstaller --noconsole --onefile "UNIDAD 1 v0.3.py"
 
     - name: Subir artefacto (.exe)
       uses: actions/upload-artifact@v4
